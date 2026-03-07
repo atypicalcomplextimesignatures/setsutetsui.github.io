@@ -1,0 +1,42 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #000;
+  font-family: "Helvetica", sans-serif;
+  overflow-x: hidden;
+}
+
+.page-body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: var(--user-color, #a8c8ff3f);
+  color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.color-picker-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.color-picker {
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  border: 2px solid #16161d;
+}
+
+#magazine-background-color-picker {
+  background: var(--magazine-background-color, #A8FFC8);
+}
+
+#argama-color-picker {
+  background: var(--argama-color, #A8C8FF);
+}

@@ -1,13 +1,39 @@
 ---
 // src/pages/magazine.astro
-import "../styles/_magazine.scss";
+import "../styles/_editor.scss";
 ---
+
 <html>
   <head>
     <meta name="robots" content="noindex, nofollow" />
     <title>Magazine</title>
   </head>
+
   <body>
-    <h1>You found it!</h1>
+    <div class="magazine-preview">
+      <iframe
+        id="magazine-frame"
+        src="/preview"
+        style="width: 100%; height: 500px; border: none;"></iframe>
+    </div>
+
+    <div class="page-body">
+      <h2>Editor</h2>
+      <div class="color-picker-container">
+        <label for="magazine-background-color-picker">Background Color:</label>
+        <div id="magazine-background-color-picker" class="color-picker"></div>
+      </div>
+      <div class="color-picker-container">
+        <label for="argama-color-picker">Title Color:</label>
+        <div id="argama-color-picker" class="color-picker"></div>
+      </div>
+      <div class="image-input-container">
+        <label for="image-input">Cover Image:</label>
+        <input type="file" id="image-input" accept="image/*" />
+      </div>
+    </div>
+    <script>
+      import "../scripts/editor-logic.ts";
+    </script>
   </body>
 </html>

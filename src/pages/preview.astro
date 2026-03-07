@@ -1,0 +1,23 @@
+---
+// src/pages/hidden-preview.astro
+import "../styles/_magazine.scss";
+import frontCoverSVG from "../assets/front cover.svg?raw";
+---
+
+<html>
+  <head>
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+  </head>
+  <body>
+    <div id="front-cover">
+      <Fragment set:html={frontCoverSVG} />
+    </div>
+    <div id="article-content">
+      <p>Article Content</p>
+    </div>
+  </body>
+</html>
+
+<script>
+      import "../scripts/preview.ts";
+</script>
