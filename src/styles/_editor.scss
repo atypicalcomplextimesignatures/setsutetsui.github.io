@@ -8,7 +8,7 @@ html {
   overflow-x: hidden;
 }
 
-.page-body {
+#editor-controls {
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -28,15 +28,15 @@ html {
 
 .color-picker {
   width: 40px;
-  height: 20px;
+  height: 16px;
   cursor: pointer;
   border: 2px solid #16161d;
 }
 
 #magazine-background-color-picker {
-  background: var(--magazine-background-color, #A8FFC8);
+  background: var(--magazine-background-color, #a8ffc8);
 }
 
 #argama-color-picker {
-  background: var(--argama-color, #A8C8FF);
+  background: var(--argama-text-color, #a8c8ff);
 }

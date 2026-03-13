@@ -9,15 +9,14 @@ import frontCoverSVG from "../assets/front cover.svg?raw";
     <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
   </head>
   <body>
-    <div id="front-cover">
-      <Fragment set:html={frontCoverSVG} />
-    </div>
-    <div id="article-content">
-      <p>Article Content</p>
+    <div id="magazine-scaler">
+      <section id="cover-page" class="magazine-page">
+        <Fragment set:html={frontCoverSVG} />
+      </section>
     </div>
   </body>
 </html>
 
 <script>
-      import "../scripts/preview.ts";
+  import "../scripts/preview.ts";
 </script>

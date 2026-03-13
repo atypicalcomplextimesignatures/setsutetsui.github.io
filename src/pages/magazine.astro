@@ -14,23 +14,36 @@ import "../styles/_editor.scss";
       <iframe
         id="magazine-frame"
         src="/preview"
-        style="width: 100%; height: 500px; border: none;"></iframe>
+        style="width: 100%; height: 540px; border: none;"></iframe>
     </div>
 
-    <div class="page-body">
-      <h2>Editor</h2>
-      <div class="color-picker-container">
-        <label for="magazine-background-color-picker">Background Color:</label>
-        <div id="magazine-background-color-picker" class="color-picker"></div>
+    <div id="editor-controls">
+      <h1>Editor</h1>
+      <div id="front-matter">
+        <h2>Front Cover</h2>
+        <div class="color-picker-container">
+          <label for="magazine-background-color-picker">Background Color:</label
+          >
+          <div id="magazine-background-color-picker" class="color-picker"></div>
+        </div>
+        <div class="color-picker-container">
+          <label for="argama-color-picker">Title Color:</label>
+          <div id="argama-color-picker" class="color-picker"></div>
+        </div>
+        <div class="cover-image-picker">
+          <label for="cover-image">Cover Image:</label>
+          <input type="file" id="cover-image" accept="image/*" />
+        </div>
+        <div class="input-group">
+          <label for="artist-input">Illustration Credit:</label>
+          <input type="text" id="artist-input" value="[ARTIST]" />
+        </div>
+        <div class="input-group">
+          <label for="character-name-input">Character Name:</label>
+          <input type="text" id="character-name-input" value="射命丸文" />
+        </div>
       </div>
-      <div class="color-picker-container">
-        <label for="argama-color-picker">Title Color:</label>
-        <div id="argama-color-picker" class="color-picker"></div>
-      </div>
-      <div class="image-input-container">
-        <label for="image-input">Cover Image:</label>
-        <input type="file" id="image-input" accept="image/*" />
-      </div>
+      
     </div>
     <script>
       import "../scripts/editor-logic.ts";

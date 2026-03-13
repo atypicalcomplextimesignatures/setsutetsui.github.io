@@ -3,6 +3,19 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: #1a1a1a;
+  /* Add flex centering */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#magazine-scaler {
+  flex-shrink: 0;
+  transform: scale(0.18); /* Hardcoded scale for your 540px iframe */
+  transform-origin: top center;
+  /* This prevents the scaled-up "ghost" height from causing huge scrollbars */
+  height: min-content;
 }
 
 @page {
@@ -10,17 +23,23 @@ body {
   margin: 0;
 }
 
-#cover-page {
-  page: cover;
-  width: 100vw;
-  height: 100vh;
+.magazine-page {
+  width: 2100px;
+  height: 2970px;
+  position: relative;
+  overflow: hidden;
   display: block;
+  background: white; /* Default page color */
   break-after: page;
 }
 
-#cover-page svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
+#cover-page {
+  background-color: var(--magazine-background-color, #a8ffc8);
+
+  svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
 }
