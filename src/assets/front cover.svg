@@ -152,15 +152,15 @@
             d="M1299.82 253.326L1293.68 206.688L1300.53 205.786C1303.13 205.444 1305.38 205.729 1307.26 206.643C1309.17 207.554 1310.69 209 1311.83 210.979C1312.98 212.959 1313.74 215.366 1314.11 218.2C1314.48 221.034 1314.35 223.537 1313.71 225.709C1313.07 227.88 1311.95 229.663 1310.35 231.057C1308.76 232.428 1306.72 233.332 1304.22 233.769L1306.67 252.424L1299.82 253.326ZM1303.3 226.789C1304.5 226.63 1305.42 226.272 1306.06 225.715C1306.69 225.137 1307.09 224.31 1307.25 223.234C1307.43 222.156 1307.41 220.803 1307.2 219.174C1306.98 217.525 1306.65 216.202 1306.19 215.208C1305.76 214.21 1305.15 213.516 1304.37 213.124C1303.61 212.729 1302.64 212.61 1301.45 212.766L1303.3 226.789Z"
             fill="white" />
     </g>
-    <text id="issue-text" transform="translate(1177.66 2394.59) rotate(-7.5)" fill="#16161D" style="white-space: pre"
-        xml:space="preserve" font-family="Hanken Grotesk" font-size="192" font-weight="900" letter-spacing="0em">
+    <text id="issue-text" transform="translate(1936.39 2298) rotate(-7.5)" fill="#16161D" style="white-space: pre"
+        xml:space="preserve" font-family="Hanken Grotesk" font-size="192" font-weight="900" letter-spacing="0em" text-anchor="end">
         <tspan x="0" y="162.912">Issue #X</tspan>
     </text>
     <text id="argama-jp" transform="translate(371.717 2288.88) rotate(-7.5)" fill="var(--argama-text-color, #A8C8FF)"
         style="white-space: pre" xml:space="preserve" font-family="Mochiy Pop One" font-size="64" letter-spacing="0em">
         <tspan x="0" y="59.904">&#x30a2;&#x30fc;&#x30ac;&#x30de;</tspan>
     </text>
-    <text id="character-name" transform="translate(382.797 2351.98) rotate(-7.5)"
+<text id="character-name" transform="translate(382.797 2351.98) rotate(-7.5)"
         fill="var(--argama-text-color, #A8C8FF)" style="white-space: pre" xml:space="preserve"
         font-family="Mochiy Pop One" font-size="128" letter-spacing="0em">
         <tspan id="character-name-tspan" x="0" y="119.808">&#x5c04;&#x547d;&#x4e38;&#x6587;</tspan>

@@ -39,6 +39,14 @@ window.addEventListener("message", (event) => {
   if (event.data.type === "updateCharacterName") {
     updateCharacterName(event.data.name);
   }
+  if (event.data.type === "updateIssueNumber") {
+    const issueText = document.querySelector("#issue-text tspan") as SVGTSpanElement;
+    if (issueText) {
+      issueText.textContent = `Issue #${event.data.number}`;
+      // x="0" ensures it stays relative to the parent's translate point
+      issueText.setAttribute("x", "0"); 
+    }
+  }
 });
 
 function updateArtistText(newText: string) {

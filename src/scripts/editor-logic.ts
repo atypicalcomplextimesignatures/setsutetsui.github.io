@@ -58,7 +58,6 @@ coverImageInput?.addEventListener("change", (e) => {
 });
 
 const artistInput = document.getElementById("artist-input") as HTMLInputElement;
-
 artistInput?.addEventListener("input", (e) => {
   const artistName = (e.target as HTMLInputElement).value;
   iframe.contentWindow?.postMessage(
@@ -70,8 +69,13 @@ artistInput?.addEventListener("input", (e) => {
 const characterNameInput = document.getElementById(
   "character-name-input",
 ) as HTMLInputElement;
-
 characterNameInput?.addEventListener("input", (e) => {
   const name = (e.target as HTMLInputElement).value;
   iframe.contentWindow?.postMessage({ type: "updateCharacterName", name }, "*");
 });
+
+const issueNumberInput = document.getElementById("issue-number-input") as HTMLInputElement;
+issueNumberInput?.addEventListener("input", (e) => {
+  const num = (e.target as HTMLInputElement).value;
+  iframe.contentWindow?.postMessage({ type: "updateIssueNumber", number: num }, "*");
+})
