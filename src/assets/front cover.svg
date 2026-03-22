@@ -99,8 +99,6 @@
         <g id="image-artist">
             <rect id="artist-bg" x="1841" y="2195.77" width="503" height="105" transform="rotate(172.5 1837.07 2195.77)"
                 fill="#16161D" />
-
-            <!-- Changed Y from 2192.69 to 2145.00 to move it "upward" (visually) into the flipped box -->
             <text id="artist-text-container" transform="translate(1810 2120.00) rotate(-7.5)" fill="white"
                 style="white-space: pre" xml:space="preserve" font-family="Ramabhadra" font-size="48"
                 letter-spacing="0em" text-anchor="end">
@@ -153,14 +151,15 @@
             fill="white" />
     </g>
     <text id="issue-text" transform="translate(1936.39 2298) rotate(-7.5)" fill="#16161D" style="white-space: pre"
-        xml:space="preserve" font-family="Hanken Grotesk" font-size="192" font-weight="900" letter-spacing="0em" text-anchor="end">
+        xml:space="preserve" font-family="Hanken Grotesk" font-size="192" font-weight="900" letter-spacing="0em"
+        text-anchor="end">
         <tspan x="0" y="162.912">Issue #X</tspan>
     </text>
     <text id="argama-jp" transform="translate(371.717 2288.88) rotate(-7.5)" fill="var(--argama-text-color, #A8C8FF)"
         style="white-space: pre" xml:space="preserve" font-family="Mochiy Pop One" font-size="64" letter-spacing="0em">
         <tspan x="0" y="59.904">&#x30a2;&#x30fc;&#x30ac;&#x30de;</tspan>
     </text>
-<text id="character-name" transform="translate(382.797 2351.98) rotate(-7.5)"
+    <text id="character-name" transform="translate(382.797 2351.98) rotate(-7.5)"
         fill="var(--argama-text-color, #A8C8FF)" style="white-space: pre" xml:space="preserve"
         font-family="Mochiy Pop One" font-size="128" letter-spacing="0em">
         <tspan id="character-name-tspan" x="0" y="119.808">&#x5c04;&#x547d;&#x4e38;&#x6587;</tspan>
@@ -168,8 +167,7 @@
     </g>
     <defs>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&amp;display=swap');
-        </style>
+            @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&ampfamily=Mochiy+Pop+One&ampdisplay=swap');
         <linearGradient id="paint0_linear_1064_7" x1="660.269" y1="404.453" x2="660.269" y2="2587.45"
             gradientUnits="userSpaceOnUse">
             <stop offset="0.668269" stop-color="#16161D" stop-opacity="0" />

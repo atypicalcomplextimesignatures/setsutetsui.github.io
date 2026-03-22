@@ -1,0 +1,20 @@
+{
+    "characterName": "Patchouli Knowledge",
+    "characterOrigin": "TH06 Embodiment of Scarlet Devil",
+    "characterImage": "patchouli_knowledge.png",
+    "characterImageArtist": "dairi",
+    "characterImageArtistSource": "https://www.pixiv.net/en/users/4920496",
+    "goodHints": [
+        "purple hair",
+        "purple eyes",
+        "ribbons",
+        "pink dress"
+    ],
+    "betterHints": [
+        "mob cap"
+    ],
+    "bestHints": [
+        "book",
+        "crescent moon"
+    ]
+}

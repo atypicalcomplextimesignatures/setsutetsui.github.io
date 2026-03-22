@@ -1,0 +1,46 @@
+---
+// src/pages/charess.astro
+import "../styles/_charess.scss";
+---
+
+<html>
+  <head>
+    <title>Charess</title>
+  </head>
+  <body>
+    <h1>Charess</h1>
+    <div id="gameBox" hidden>
+      <h2>Guess the character!</h2>
+      <div id="hints"></div>
+      <div>
+        <input type="text" id="guessBox" placeholder="Guess..." />
+      </div>
+    </div>
+    <div id="gameSettings">
+      <h2>Configure the game!</h2>
+      <div id="characterSet">
+        <label for="franchise">franchise:</label>
+        <select name="franchise" id="franchise">
+          <option value="touhou">touhou</option>
+          <option value="hololive">hololive</option>
+          <option value="100OrangeJuice">100% orange juice</option>
+          <option value="vocalSynths">vocal synths</option>
+        </select>
+        <label for="allowedOrigin">allowed origins:</label>
+      </div>
+      <label for="maxTime">max time:</label>
+      <select name="maxTime" id="maxTime">
+        <option value="30">30s</option>
+        <option value="60" selected>60s</option>
+        <option value="90">90s</option>
+        <option value="unlimited">&infin;</option>
+      </select>
+      <label for="maxHints">max hints:</label>
+      <input type="number" id="maxHints" min="1" value="5" max="8" />
+      <div id="hintBreakdown"></div>
+    </div>
+  </body>
+  <script>
+    import "../scripts/charess.ts";
+  </script>
+</html>
