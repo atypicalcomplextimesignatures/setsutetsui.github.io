@@ -1,12 +1,15 @@
 ---
 import "../styles/_navbar.scss";
+
+const currentPath = Astro.url.pathname;
 ---
 
 <nav>
-  <a href="/" class="brand">atypicalcomplextimesignatures</a>
   <ul>
-    <li><a href="/">home</a></li>
-    <li><a href="/about">about</a></li>
-    <li><a href="/projects">projects</a></li>
+    <li><a href="/" class={currentPath === "/" ? "active" : ""}>home</a></li>
+    <li><a href="/art" class={currentPath === "/art" ? "active" : ""}>art</a></li>
+    <li><a href="/writing" class={currentPath === "/writing" ? "active" : ""}>writing</a></li>
+    <li><a href="/projects" class={currentPath === "/projects" ? "active" : ""}>projects</a></li>
   </ul>
+  <div id="brand">atypicalcomplextimesignatures</div>
 </nav>

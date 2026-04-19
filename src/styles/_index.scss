@@ -1,21 +1,77 @@
-.hero {
-  padding: 4rem 2rem;
-  text-align: center;
-  background: #f4f4f4;
-
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-    color: #666;
-  }
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
 }
 
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+#banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -10;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 67%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 67%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+#text {
+  position: relative;
+  margin: -6.7rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  pointer-events: none;
+}
+
+#name {
+  color: #e2e2e2;
+  font-family: "Gentium Book Plus", serif;
+  font-size: 20rem;
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+#ipa {
+  color: #ffd47d;
+  font-family: "Cascadia Mono", Arial, monospace;
+  font-weight: 400;
+  font-size: 1.5rem;
+  display: relative;
+  top: 0;
+  left: 0;
+  transform: translate(42rem, -21rem);
+}
+
+#gradient {
+  position: fixed;
+  z-index: -10;
+  background: linear-gradient(to bottom, #16161dff 0%, #16161d00 67%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+#shields {
+  position: relative;
+  margin: -7.5rem auto;
+}
+
+body {
+  background-color: #433938;
 }

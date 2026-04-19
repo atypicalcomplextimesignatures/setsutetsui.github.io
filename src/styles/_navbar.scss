@@ -1,15 +1,21 @@
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: #eeeeee;
-  color: #333;
+  background: #16161d80;
+  color: #e2e2e2;
+  position: relative;
+  font-family: "Cascadia Mono", Arial, monospace;
+  //font-family: "Secular One", sans-serif;
+  font-weight: 400;
+  z-index: 10;
 }
 
 ul {
   display: flex;
-  gap: 15px;
+  gap: 16px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -22,8 +28,14 @@ a {
   &:hover {
     text-decoration: underline;
   }
+  &.active {
+    color: #ffd47d; /* Highlight color */
+    font-weight: 600; /* Make it bolder */
+    text-decoration: underline;
+  }
 }
 
-.brand {
-  font-weight: bold;
+#brand {
+  color: #ffd47d;
+  font-weight: 700;
 }
