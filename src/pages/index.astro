@@ -1,14 +1,16 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
+import bannerImage from "../assets/main/home/discord profile banner.png";
 import "../styles/_index.scss";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="atypicalcomplextimesignatures">
   <section class="main">
-    <img
+    <Image
       id="banner"
-      src="/src/assets/main/home/discord profile banner.png"
-      alt="London"
+      src={bannerImage}
+      alt="Banner"
     />
     <div id="gradient"></div>
     <div id="text">
